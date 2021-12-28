@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block title %}
+    <!-- Загрузка документов -->
+    <div class="card mb-5" >
+    <div class="card-header">
+        <h1>Загрузка документов</h1>
+    </div>
+    <div class="card-body">
+        <div class="row h-100">
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <label for="formFile" class="form-label card-body">
+                            <h3>Паспорт</h3>
+                        </label>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="file" id="formFile1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <label for="formFile" class="form-label card-body">
+                            <h3>Водительские права</h3>
+                        </label>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="file" id="formFile2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <label for="formFile" class="form-label card-body">
+                            <h3>ПТС</h3>
+                        </label>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="file" id="formFile3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <label for="formFile" class="form-label card-body">
+                            <h3>Регистрация ТС</h3>
+                        </label>
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" type="file" id="formFile3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-3 mt-1">
+            <div class="col-12">
+                <h2 class="card-title">Загрузка фотографий водителя ТС</h2>
+            </div>
+            <div class="col-3 offset-9">
+                <button type="submit" class="btn btn-primary" disabled>Добавить водителя ТС</button>
+            </div>
+            <div class="col-3 offset-9">
+                <button type="submit" class="btn btn-primary">Обработать фотографии</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Паспорт -->
+    <div class="card mb-5">
+    <div class="card-header">
+        <h1>Паспортные данные владельца ТС</h1>
+    </div>
+    <div class="row gy-3 mt-2 mb-4 mx-3">
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Кем выдан</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Код подразделения</label>
+            </form>
+        </div>
+        <div class="col-2">
+            Дата выдачи:
+        </div>
+        <div class="col-4">
+            <input type="date" class="form-control" id="date" name="date" placeholder="Дата" value="25.01.1999" required>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Серия</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Номер</label>
+            </form>
+        </div>
+        <div class="col-7">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Фамилия</label>
+            </form>
+        </div>
+        <div class="col-7">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Имя</label>
+            </form>
+        </div>
+        <div class="col-7">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Отчество</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <div class="col-1">
+                Пол:
+            </div>
+            <div class="col-5">
+                <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                    <option selected>Мужской</option>
+                    <option value="1">Женский</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-2">
+            Дата рождения:
+        </div>
+        <div class="col-4">
+            <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        </div>
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Место рождения</label>
+            </form>
+        </div>
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">MZN</label>
+            </form>
+        </div>
+        <div class="col-2 offset-10">
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </div>
+    </div>
+    </div>
+    <!-- Водительские права -->
+    <div class="card mb-5">
+    <div class="card-header">
+        <h1>Водительские права</h1> 
+    </div>
+    <div class="row gy-3 mt-2 mb-4 mx-3">
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="driverLicense" id="driverLicenseNew" checked>
+            <label class="form-check-label" for="driverLicenseNew">
+                Новый тип водительский прав
+            </label>
+        </div>
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="driverLicense" id="driverLicenseOld">
+            <label class="form-check-label" for="driverLicenseOld">
+                Старый тип водительский прав
+            </label>
+        </div>
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Фамилия</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Имя</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Отчество</label>
+            </form>
+        </div>
+        <div class="col-2">
+            Дата рождения:
+        </div>
+        <div class="col-4">
+            <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        </div>
+        <div class="col-2">
+            Дата выдачи действующего удостоверения:
+        </div>
+        <div class="col-4">
+            <input type="date" class="form-control" id="date" name="date" placeholder="Дата" required>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Серия</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Номер</label>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">Стаж вождения</label>
+            </form>
+        </div>
+        <div class="col-2 offset-10">
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </div>
+    </div>
+    </div>
+    <!-- ПТС -->
+    <div class="card mb-5">
+    <div class="card-header">
+        <h1>ПТС</h1>
+    </div>
+    <div class="row gy-3 mt-2 mb-4 mx-3">
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="vehiclePassport" id="vehiclePassportNew" checked>
+            <label class="form-check-label" for="vehiclePassportNew">
+                Новый тип ПТС
+            </label>
+        </div>
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="vehiclePassport" id="vehiclePassportOld">
+            <label class="form-check-label" for="vehiclePassportOld">
+                Старый тип ПТС
+            </label>
+        </div>
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">VIN</label>
+            </form>
+        </div>
+        <div class="col-12">
+            <form class="form-floating">
+                <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+                <label for="floatingInputInvalid">VIN</label>
+            </form>
+        </div>
+        <div class="col-2 offset-10">
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </div>
+    </div>
+    </div>
+    <!-- Регистрация ТС -->
+    <div class="card mb-5">
+    <div class="card-header">
+        <h1>Регистрация ТС</h1>
+    </div>
+    <div class="row gy-3 mt-2 mb-4 mx-3">
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="vehicleRegistration" id="vehicleRegistrationNew" checked>
+            <label class="form-check-label" for="vehicleRegistrationNew">
+                Новый тип Регистрация ТС
+            </label>
+        </div>
+        <div class="col-6 form-check">
+            <input class="form-check-input" type="radio" name="vehicleRegistration" id="vehicleRegistrationOld">
+            <label class="form-check-label" for="vehicleRegistrationOld">
+                Старый тип Регистрация ТС
+            </label>
+        </div>
+        <div class="col-2 offset-10">
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+{% endblock %}
